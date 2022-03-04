@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginRight="4dp"
+    android:background="@drawable/design"
+    android:backgroundTintMode="src_in"
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:paddingStart="3dp"
+        android:paddingTop="3dp">
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="7dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/spinner_background"
+            android:backgroundTint="#CB10100F"
+            android:fontFamily="sans-serif-condensed"
+            android:hapticFeedbackEnabled="false"
+            android:onClick="bt1"
+            android:paddingRight="6.5dp"
+            android:shadowColor="#C18218"
+            android:text="Tasbih Fatima"
+            android:textColor="#F8F6F6"
+            android:textColorHighlight="#1E5CC3"
+            android:textColorHint="#C81010"
+            android:textColorLink="#1A656E"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="8dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/spinner_background"
+            android:backgroundTint="#C60B0B0A"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="kalima"
+            android:paddingRight="4dp"
+            android:text="1st Kalima 100 Times"
+            android:textColor="#F6F1F1"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="7dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/spinner_background"
+            android:backgroundTint="#D80E0E0E"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="Astagfhar"
+            android:paddingRight="5dp"
+            android:text="Astagfar 100 Times"
+            android:textColor="#FBF1F1"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt4"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/spinner_background"
+            android:backgroundTint="#CD10100F"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="Daruud"
+            android:text="Darood 100 times"
+            android:textColor="#F4EFEF"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/bt5"
+            android:layout_width="3dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/spinner_background"
+            android:backgroundTint="#DD0C0C0C"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="Ayete"
+            android:paddingRight="3.5dp"
+            android:text="Ayete Karima 100 times"
+            android:textColor="#F7F8FB"
+            android:textColorHighlight="@color/purple_200"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/spinner_background"
+            android:backgroundTint="#D2090909"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingRight="5dp"
+            android:shadowColor="#0D2CEF"
+            android:text="Reset"
+            android:textAppearance="@style/Theme.TasbeehApp"
+            android:textColor="#F4EBEB"
+            android:textColorHighlight="#8A7C59"
+            android:textColorHint="@color/purple_700"
+            android:textCursorDrawable="@android:drawable/editbox_dropdown_dark_frame"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <TextView
+
+            android:id="@+id/SelectTasbeeh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.2"
+            android:background="#9F191B18"
+            android:fontFamily="@font/belgrano"
+            android:gravity="center"
+            android:text="Select Tasbeeh"
+            android:textColor="#FBC02D"
+            android:textSize="43sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DisplayCount"
+            android:layout_width="414dp"
+            android:layout_height="500dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="3"
+            android:background="#630E1010"
+            android:backgroundTint="#151414"
+            android:gravity="center|top"
+            android:text="0"
+            android:textColor="#FFD600"
+            android:textSize="225sp" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.8"
+        android:background="#AE26C6DA"
+        android:backgroundTint="#431B1818">
+
+
+        <Button
+            android:id="@+id/counter"
+            android:layout_width="148dp"
+            android:layout_height="67dp"
+            android:background="@android:drawable/spinner_background"
+            android:backgroundTint="#D50E0E0D"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center|top"
+            android:paddingTop="15dp"
+            android:paddingEnd="3dp"
+            android:paddingRight="4dp"
+            android:shadowColor="@color/purple_200"
+            android:stateListAnimator="@android:anim/fade_out"
+            android:text="Count"
+            android:textColor="#F4F2F2"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
